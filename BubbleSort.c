@@ -21,9 +21,10 @@ printf("\n Array mit %d zufaellige Zahlen sortiert:\n",anz);
 
 zeigeArrayInConsole(z,anz);{
 
-for (int i=0, i < anz, i++){
+srand = 5;
+for (int i=0; i < anz; i++){
 
-array[i] = rand();
+array[i] = rand()%100;
 
 }
 
@@ -34,7 +35,7 @@ array[i] = rand();
 
 void erzeugeArray(int * array, int anz){
     
-for (int i=0, i < anz, i++)
+for (int i=0; i < anz; i++)
 printf("%d",array[i])
     
     return 0;
