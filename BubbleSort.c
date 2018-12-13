@@ -14,12 +14,14 @@ main ()
   int z[anz];
 
   erzeugeArray (z, anz);
-  printf ("\nArray mit %d zufaellige Zahlen\n", anz);
+  printf ("\nArray mit %d zufaellige Zahlen \n", anz);
   zeigeArrayInConsole (z, anz);
   bubblesort (z, anz);
   printf ("\nArray mit %d zufaellige Zahlen sortiert:\n", anz);
   zeigeArrayInConsole (z, anz);
 
+  printf ("\n Die maximalen Zahl von Sortieren wären (%d-1)*(%d-1) = %d\n", anz,anz,(anz-1)*(anz-1));
+  printf ("Verbesserte Version (Pro Durchlauf 1 Vergleich weniger) wäre:(%d+%d+%d+ ... + 2 +1 =%d\n", anz-1,anz-2,anz-3,(anz/2)*(1+anz));
 }
 
 zeigeArrayInConsole (int *array, int anz)
