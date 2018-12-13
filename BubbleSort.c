@@ -25,12 +25,9 @@ main ()
 zeigeArrayInConsole (int *array, int anz)
 {
 
-  srand (5);
   for (int i = 0; i < anz; i++)
     {
-
-      array[i] = rand () % 100;
-    printf ("%d ", array[i]);
+        printf ("%d ", array[i]);
     }
 
 //array = [1,2,3,4,5]
@@ -41,23 +38,20 @@ zeigeArrayInConsole (int *array, int anz)
 void
 erzeugeArray (int *array, int anz)
 {
-
+  srand (5);
   for (int i = 0; i < anz; i++)
     array[i] = rand()%100;
-    
-    
-
   return 0;
 }
 
 
 void dreiEcksTausch (int *array, int position)
 {
-    printf("vorher: %d , %d  ",array[position], array[position+1]);
+    //printf("vorher: %d , %d  ",array[position], array[position+1]);
     int temp = array[position];
     array[position] = array[position+1];
     array[position+1] = temp;
-    printf("nacher: %d , %d\n",array[position], array[position+1]);
+    //printf("nacher: %d , %d\n",array[position], array[position+1]);
   return 0;
 }
 void bubblesort (int *z, int anz)
